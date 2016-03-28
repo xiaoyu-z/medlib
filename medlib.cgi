@@ -12,7 +12,7 @@ sentence_data = ['The NOUN had to VERB the ADJ thing','I hate the ADJ NOUN','You
 def printCategory(category):
     '''return the HTML of input page
     '''
-    str ='''<form action="square.cgi">'''
+    str ='''<form action="medlib.cgi">'''
     for i in category:
         str += categoryHTML(i)
     return str+hiddenHTML(page)+'''<input type=submit value="Okay."></form>'''
